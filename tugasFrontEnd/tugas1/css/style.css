@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@400;500;700&display=swap");
+
+:root {
+  --primary-text-color: #6c7289;
+  --color-primary: #3c8067;
+  --hover-color-primary: #336b56;
+  --bg-color: #f2ebe3;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+section {
+  background-color: var(--bg-color);
+  width: 100vw;
+  height: 100vh;
+}
+
+.title-pf {
+  letter-spacing: 4px;
+  font-family: "Montserrat", "sans-serif";
+}
+
+p {
+  font-size: 14px;
+  color: var(--primary-text-color);
+}
+
+h2 {
+  font-family: "Fraunces", "serif";
+}
+
+.card {
+  flex-direction: row !important;
+}
+
+.card img {
+  border-radius: 0 !important;
+}
+
+.title-product {
+  padding: 5px 0;
+  width: 75%;
+}
+
+.price {
+  padding: 10px 0;
+}
+
+.price-no1 {
+  color: var(--color-primary);
+}
+
+.desc {
+  padding: 10px 0;
+  width: 75%;
+}
+
+.btn-primary {
+  background-color: var(--color-primary) !important;
+  border: none !important;
+}
+.btn-primary:hover {
+  background-color: var(--hover-color-primary) !important;
+}
+
+@media screen and (max-width: 375px) {
+  .card {
+    display: block !important;
+    margin-top: 100px;
+  }
+  .card-body {
+    width: 100% !important;
+  }
+  .card .imgmobile {
+    display: block !important;
+    width: 100vw;
+  }
+  .card .imgdesktop {
+    display: none;
+  }
+  .title-product {
+    width: 90%;
+    padding: 0;
+  }
+  .desc {
+    padding-top: 0;
+    padding-bottom: 0;
+    width: 100%;
+  }
+  .price {
+    padding: 0;
+  }
+  .btn-primary span {
+    padding: 4px;
+  }
+}
+
+@media screen and (max-width: 530px) {
+  .title-product {
+    width: 90%;
+  }
+  .desc {
+    width: 100%;
+  }
+}
